@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Homepage"
+title = "ねむみもふこブログ -うつ病ママの妊娠・育児記録-"
 theme = "hugo-vitae-1.0.4"
 
 # RSS, categories and tags disabled for an easy start
