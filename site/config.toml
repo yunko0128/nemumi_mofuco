@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "ねむみもふこブログ -うつ病ママの妊娠・育児記録-"
-theme = "hugo-vitae-1.0.4"
+theme = "hugo-creative-portfolio-theme"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
