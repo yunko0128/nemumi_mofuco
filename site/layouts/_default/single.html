@@ -1,88 +1,23 @@
-<!DOCTYPE html>
-<html>
-{{ partial "header.html" . }}
-<body>
-	<div class="container wrapper">
-		{{ partial "head.html" . }}
+{{ define "main" }}
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  {{ partial "mobile_nav_toggle.html" . }}
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+     <h1>{{ .Title }}</h1>
+     <div class="tags">{{ partial "taxonomy.html" . }}</div> <!--タグ、カテゴリをinclude-->
+     <div>{{ dateFormat "2006/01/01" .Date }}</div>
+		 <div><img src="{{ .Params.Image }}" /></div>
+         {{ .Content }}
+         {{ template "_internal/disqus.html" . }}
+      </div>
+    </div>
+  </div>
 
-		<div class="post">
-			<div class="author">
-				{{ if eq .Site.Params.listAuthor true}}
-					{{ if isset .Params "author" }}
-						{{ if isset .Params "authorlink" }}
-							{{ i18n "authorpretext" }} <a href="{{ .Params.authorlink }}">{{ .Params.author }}</a>
-						{{ else }}
-							{{ i18n "authorpretext" }} {{ .Params.author }}
-						{{ end }}
-					{{ end }}
-				{{ end }}
-			</div>
-			<div class="post-header">
-				{{ if ne .Date.Year 1 }}
-					<div class="meta">
-						<div class="date">
-							<span class="day">{{ dateFormat "02" .Date }}</span>
-							<span class="rest">{{ if $.Site.Data.month }}{{ index $.Site.Data.month (printf "%d" .Date.Month) }} {{ .Date.Year }}{{ else }}{{ dateFormat "Jan 2006" .Date }}{{ end }}</span>
-						</div>
-					</div>
-				{{ end }}
-				<div class="matter">
-					<h1 class="title">{{ .Title }}</h1>
-				</div>
-			</div>
-			<div class="markdown">
-				{{ .Content }}
-			</div>
-			<div class="tags">
-				{{ if ne .Type "page" }}
-				{{ $pagename := .Page.Title }}
-				{{ $notaxo := .Params.notaxonomy }}
-				{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-					{{ with index $.Params $taxonomyname }}
-					{{ with ($.Site.GetPage (printf "/%s" $taxonomyname)) }}
-					{{ if in $notaxo $taxonomyname }}
-					{{ else }}
-						<div class="taxosfloating_left">
-							<p>{{ $taxonomyname | humanize }}</p>
-						</div>
-						<div class="termsfloating_right">
-							<p>
-								{{ range $key, $value := $taxonomy }}
-									{{ range $value.Pages }}
-									{{ if eq .LinkTitle $pagename }}
-										<a href="/{{ $taxonomyname }}/{{ $key }}/"> {{ $key }} </a>
-									{{ end }}
-									{{ end }}
-								{{ end }}
-							</p>
-						</div>
-						<div class="clearit"></div>
-					{{ end }}
-					{{ end }}
-					{{ end }}
-				{{ end }}
-				{{ end }}
-			</div>
-
-			{{- if .Site.DisqusShortname -}}
-			{{- $.Scratch.Set "isDisqus" true -}}
-
-			{{- if and (isset .Params "type") (in .Site.Params.disableDisqusTypes .Params.type) -}}
-				{{- $.Scratch.Set "isDisqus" false -}}
-			{{- end -}}
-
-			{{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
-				{{- $.Scratch.Set "isDisqus" false -}}
-			{{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
-				{{- $.Scratch.Set "isDisqus" true -}}
-			{{- end -}}
-
-			{{- if eq ($.Scratch.Get "isDisqus") true -}}
-			{{- partial "disqus.html" . -}}
-			{{- end -}}
-			{{- end -}}
-		</div>
-	</div>
-	{{ partial "footer.html" . }}
-</body>
-</html>
+  <div>
+  	<div>{{with .Prev}}<a href="{{.URL}}">&lt;- 前の記事 - {{.Title}}</a>{{end}}</div>
+  	<div style="text-align:right;">{{with .Next}}<a href="{{.URL}}">次の記事 - {{.Title}} - &gt;</a>{{end}}</div>
+  </div>
+  
+</div>
+{{ end }}
