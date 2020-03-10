@@ -1,6 +1,6 @@
 ---
-title: "Great coffee with a conscience"
-subtitle: Support sustainable farming while enjoying a cup
+title: "ねむみもふこブログ"
+subtitle: "うつ病ママの妊娠・育児日記です。妊娠中の産前鬱の記録などを残しています。2020年生まれの令和ベビーの育児日記も。"
 image: /img/home-jumbotron.jpg
 blurb:
     heading: Why Kaldi?
