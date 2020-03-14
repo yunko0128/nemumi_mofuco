@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    {{ partial "head.html" . }}
+    <!--google Adsence-->
+    <script data-ad-client="ca-pub-4452543806717276" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              {{ partial "sidebar.html" . }}
+              {{ block "main" . }}
+              {{ end }}
+          </div>
+      </div>
+  </div>
+  {{ partial "scripts.html" . }}
+</body>
+</html>
