@@ -2,6 +2,16 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>
     {{ partial "head.html" . }}
+
+    <!-- OGP-->
+    {{ if .Params.Image }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
+    {{ else if .Site.Params.Image }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.Image }}">
+    {{ end }}
+
+
     <!--google Adsence-->
     <script data-ad-client="ca-pub-4452543806717276" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
