@@ -3,7 +3,13 @@
 <head>
     {{ partial "head.html" . }}
 
+    
     <!-- OGP-->
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}">
+    <meta property="og:description" content="{{ .Description | default .Summary }}|{{ .Site.Params.Description }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Description | default .Summary }}|{{ .Site.Params.Description }}">
     {{ if .Params.Image }}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
     <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
