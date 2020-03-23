@@ -1,6 +1,5 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
+baseurl = "https://nemumi-mofuco.netlify.com"
+languageCode = "ja-JP"
 title = "ねむみもふこブログ"
 theme = "hugo-creative-portfolio-theme"
 
