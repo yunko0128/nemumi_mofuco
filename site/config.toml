@@ -1,6 +1,6 @@
 baseurl = "https://nemumi-mofuco.netlify.com"
 languageCode = "ja-JP"
-title = "ねむみ もふこ記"
+title = "ねむみもふこ 録"
 theme = "hugo-theme-dream"
 
 # RSS, categories and tags disabled for an easy start
