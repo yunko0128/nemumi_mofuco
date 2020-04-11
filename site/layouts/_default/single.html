@@ -8,9 +8,9 @@
 
     <section class="ui top attached segment" id="dream-save-post-as-img">
       <header style="margin-top: 0 !important;">
-        <h2 class="ui header">
+        <h2 class="ui header" style="margin-top:30px;">
           {{ .Title }}
-          <div class="sub header">
+          <div class="sub header nemumi_single_date">
             <!--@ {{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }} -->
             {{ .Date.Format "2006/1/2 Mon" }}
             <!--{{ .ReadingTime }}{{ i18n "minuteRead" }} · {{ i18n "updateAt" }} {{ dateFormat "Jan 2, 2006" .Lastmod }}-->
