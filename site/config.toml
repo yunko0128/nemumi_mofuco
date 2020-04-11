@@ -10,3 +10,37 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [markup.goldmark.renderer]
 unsafe= true
+
+
+# copyright = ""
+
+# googleAnalytics = ""
+
+# disqusShortname = ""
+
+# enableRobotsTXT = true
+
+[params]
+  background = "black"
+  # backgroundImage = "/me/background.jpg"
+  linkColor = "seagreen"
+
+  author = "ねむみ もふこ"
+  # description = ""
+  avatar = "/img/avatar.jpg"
+  motto = "うつ病持ちのワーママの妊娠・出産・育児ブログ"
+  
+  # email = "g1enyy0ung@gmail.com"
+  # github = ""
+  # linkedin = ""
+  # codepen = ""
+  # stackoverflow = ""
+
+  siteStartYear = 2020
+
+  # favicon = "/favicon.ico"
+
+  # dark mode
+  darkLinkColor = "darkseagreen"
+  darkNav = true 
+  dark404Button = true
