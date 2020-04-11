@@ -7,8 +7,11 @@
     </div>
 
     <h1 class="ui medium header">
-      {{- .Site.Params.author -}}{{- i18n "blogAlias" -}}
-      <div class="sub header" style="margin-top: 0.5rem;">{{- .Site.Params.motto -}}</div>
+      <a href="{{ .Site.BaseURL }}" class="nemumi_title">{{- .Site.Title -}}</a> <!--{{- i18n "blogAlias" -}}-->
+      <div class="sub header nemumi_motto" style="margin-top: 0.5rem;">
+        {{- .Site.Params.motto -}}<br>
+        {{- .Site.Params.motto2 -}}
+      </div>
     </h1>
 
     <div class="ui horizontal list">
@@ -60,7 +63,7 @@
   </section>
   {{ end }}
 
-  <section class="ui bottom attached center aligned segment">
+  <section class="ui bottom attached center aligned segment nemumi_copyright">
       {{ if .Site.Params.siteStartYear }}
       <p>© {{ if eq now.Year .Site.Params.siteStartYear }}{{ now.Year }}{{ else }}{{ .Site.Params.siteStartYear }} - {{ now.Year }}{{ end }} {{ .Site.Title }}</p>
       {{ else }}

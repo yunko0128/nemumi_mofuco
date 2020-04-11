@@ -1,6 +1,6 @@
 baseurl = "https://nemumi-mofuco.netlify.com"
 languageCode = "ja-JP"
-title = "ねむみもふこブログ"
+title = "ねむみもふこ ブログ"
 theme = "hugo-theme-dream"
 
 # RSS, categories and tags disabled for an easy start
@@ -11,7 +11,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [markup.goldmark.renderer]
 unsafe= true
 
-
+#------------hugo-theme-dream 独自設定-------------
 # copyright = ""
 
 # googleAnalytics = ""
@@ -21,14 +21,15 @@ unsafe= true
 # enableRobotsTXT = true
 
 [params]
-  background = "gray"
+  background = "#21ba45"
   # backgroundImage = "/me/background.jpg"
   linkColor = "seagreen"
 
   author = "ねむみ もふこ"
   # description = ""
   avatar = "/img/avatar.jpg"
-  motto = "うつ病持ちのワーママの妊娠・出産・育児ブログ"
+  motto = "うつ病持ちのワーママによる、"
+  motto2 = "まったり妊娠・出産・育児イラスト日記"
   
   # email = "g1enyy0ung@gmail.com"
   # github = ""
