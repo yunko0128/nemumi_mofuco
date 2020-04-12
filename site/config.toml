@@ -23,11 +23,11 @@ unsafe= true
 [params]
   background = "#b9dec2"
   # backgroundImage = "/me/background.jpg"
-  linkColor = "seagreen"
+  linkColor = "#162173"
 
   author = "ねむみ もふこ"
   # description = ""
-  avatar = "/img/avatar.jpg"
+  avatar = "/img/avatar.png"
   motto = "うつ病持ちのワーママによる、"
   motto2 = "まったり妊娠・出産・育児イラスト日記"
   
