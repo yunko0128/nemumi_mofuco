@@ -8,5 +8,6 @@
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
 <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
 {{ else if .Site.Params.Image }}
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.Image }}">
 <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.Image }}">
 {{ end }}

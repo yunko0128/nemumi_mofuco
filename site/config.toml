@@ -45,3 +45,6 @@ unsafe= true
   darkLinkColor = "darkseagreen"
   darkNav = true 
   dark404Button = true
+
+  image = "/img/avatar.png"
+
