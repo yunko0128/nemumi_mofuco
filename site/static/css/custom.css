@@ -1,2 +1,31 @@
 /* your styles go here */
-body{background:#f5fafb;}
+
+/* 全体 */
+.ui.attached.segment{border:none!important; border-radius: 0!important;}
+
+/*header.html ブログタイトル*/
+.nemumi_title{color: rgba(0,0,0,.87)!important;}
+
+/*header.html コピーライト*/
+.nemumi_copyright{color:rgba(0,0,0,.4); font-size:0.8rem!important;}
+
+/*header.html h1の小さい文字*/
+.nemumi_motto{font-size:1rem!important;}
+
+/*header.html タグの背景色と線の色を、強制的に緑で統一*/
+.dream-tags .ui.label{background: #21ba45!important; border-color: #21ba45!important;}
+
+/*header.html*/
+.nemumi_header{background: #FFF;}
+
+/*summary.html　画像div */
+.nemumi_summary_image{border-radius: 0!important;}
+
+/*summary.html　画像 */
+.nemumi_summary_img{border-radius: 0!important;}
+
+/*single.html 日付*/
+.nemumi_single_date{margin-top: 14px!important; font-size:1rem!important; text-align: right;}
+
+/* nav.html タグ名*/
+.nemumi_nav_tagname{text-align: center; font-size: 1.8rem; margin:0 0 20px 0;}

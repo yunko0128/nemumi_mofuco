@@ -7,10 +7,6 @@
     <title>{{ block "title" . }} {{- .Site.Title -}} {{ end }}</title>
 
     {{ partial "head.html" . }}
-
-    {{ partial "ogp.html" . }}
-
-    {{ partial "google.html" . }}
   </head>
 
   {{ if .Site.Params.background }}
@@ -34,6 +30,5 @@
     </div>
 
     {{ partial "footer.html" . }}
-
   </body>
 </html>
