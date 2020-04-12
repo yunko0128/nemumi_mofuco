@@ -1,0 +1,16 @@
+<footer class="ui attached segment dream-tags">
+    {{ if isset .Params "tags" }}
+      {{ range $tag := .Params.tags }}
+        <a class="ui label" href="{{ "tags/" | relLangURL }}{{ $tag | urlize }}" title="{{ $tag }}">#{{ $tag }}</a>
+      {{ end }}
+    {{ else }}
+        <a class="ui label">{{ i18n "noTag" }}</a>
+    {{ end }}
+  </footer>
+
+  <!--<div class="extra content">
+    <a>
+      <i class="clock icon"></i>
+      {{ .ReadingTime }}{{ i18n "minuteRead" }}
+    </a>
+  </div>-->
