@@ -26,3 +26,6 @@
 
 /*single.html 日付*/
 .nemumi_single_date{margin-top: 14px!important; font-size:1rem!important; text-align: right;}
+
+/* nav.html タグ名*/
+.nemumi_nav_tagname{text-align: center; font-size: 1.8rem; margin:0 0 20px 0;}
