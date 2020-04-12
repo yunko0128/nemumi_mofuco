@@ -1,6 +1,6 @@
 ---
-title: "ねむみもふこブログ"
-subtitle: "うつ病ママの妊娠・育児日記です。妊娠中の産前鬱の記録などを残しています。2020年生まれの令和ベビーの育児日記も。"
+title: "ねむみもふこ 禄"
+subtitle: "うつ病持ちのワーママによる、まったり妊娠・出産・育児イラスト日記"
 image: /img/avatar.png
 blurb:
     heading: Why Kaldi?
