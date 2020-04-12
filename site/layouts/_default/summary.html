@@ -1,14 +1,14 @@
 {{ if .Site.Params.backgroundImage }}
 <article class="ui raised card dream-card" style="box-shadow: none;">
 {{ else }}
-<article class="ui raised card dream-card">
+<article class="ui raised card dream-card" style="box-shadow: none;">
 {{ end }}
-  <div class="image">
+  <div class="image nemumi_summary_image">
     {{ if isset .Params "image" }}
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="nemumi_summary_img"/>
     {{ else }}
       {{/* 画像がないときに出すダミー画像（４枚ダミー画像がある様子） */}}
-      <img src="/img/default{{ index (shuffle (seq 1 4)) 0 }}.jpg" alt="{{ .Title }}" />
+      <img src="/img/default{{ index (shuffle (seq 1 4)) 0 }}.jpg" alt="{{ .Title }}" class="nemumi_summary_img"/>
     {{ end }}
   </div>
 

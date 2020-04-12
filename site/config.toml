@@ -21,7 +21,7 @@ unsafe= true
 # enableRobotsTXT = true
 
 [params]
-  background = "#21ba45"
+  background = "#b9dec2"
   # backgroundImage = "/me/background.jpg"
   linkColor = "seagreen"
 
