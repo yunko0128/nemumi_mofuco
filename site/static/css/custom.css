@@ -1,35 +1,42 @@
 /* your styles go here */
 
-/* 全体 */
+/*-------------------
+全体
+-------------------*/
 .ui.attached.segment{border:none!important; border-radius: 0!important;}
 
-/*header.html ブログタイトル*/
+
+/*-------------------
+header.html
+-------------------*/
 .nemumi_title{color: rgba(0,0,0,.87)!important;}
-
-/*header.html コピーライト*/
 .nemumi_copyright{color:rgba(0,0,0,.4); font-size:0.8rem!important;}
-
-/*header.html h1の小さい文字*/
 .nemumi_motto{font-size:1rem!important;}
-
-/*header.html タグの背景色と線の色を、強制的に緑で統一*/
 .dream-tags .ui.label{background: #21ba45!important; border-color: #21ba45!important;}
-
-/*header.html*/
 .nemumi_header{background: #FFF;}
 
-/*summary.html　画像div */
-.nemumi_summary_image{border-radius: 0!important;}
 
-/*summary.html　画像 */
+/*-------------------
+summary.html
+-------------------*/
+.nemumi_summary_image{border-radius: 0!important;}
 .nemumi_summary_img{border-radius: 0!important;}
 
-/*single.html 日付*/
+
+/*-------------------
+single.html
+-------------------*/
 .nemumi_single_date{margin-top: 14px!important; font-size:1rem!important; text-align: right;}
+/*最初の見出し画像サイズをメディアクエリーで調整*/
+.nemumi_post_top_image{max-width: 100%!important;}
+@media screen and (min-width: 481px){
+    .nemumi_post_top_image{max-width: 50%!important;}
+}
 
-/* nav.html タグ名*/
+
+/*-------------------
+nav.html
+-------------------*/
 .nemumi_nav_tagname{text-align: center; font-size: 1.8rem; margin:0 0 20px 0;}
-
-/* nav.html */
 .nemumi_nav{background: #162173!important;}
 .nemumi_nav_home{font-size: 0.9rem!important; margin:0 0 0 6px; font-weight: 700;}
