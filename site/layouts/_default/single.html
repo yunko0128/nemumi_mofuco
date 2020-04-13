@@ -17,6 +17,12 @@
           </div>
         </h2>
       </header>
+      <!--見出し画像（OGP画像）-->
+      <div>
+        {{ if .Params.Image }}
+          <img class ="nemumi_post_top_image" src="{{ .Params.Image }}" alt="{{ .Title }}">
+        {{ end }}
+      </div>
       <article style="margin-top: 2rem;">{{ .Content | emojify }}</article>
     </section>
 
